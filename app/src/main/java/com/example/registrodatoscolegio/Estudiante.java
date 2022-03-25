@@ -1,0 +1,5 @@
+package com.example.registrodatoscolegio;
+
+public class Estudiante{
+
+}
