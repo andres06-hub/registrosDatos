@@ -1,10 +1,10 @@
-package com.example.registrodatoscolegio
+package com.example.registrodatoscolegio.Clases
 /**
  * Para aplicar Herencia seria, en este caso esta es la clase que va a heredar
- * open -> Es la palabra reservada para indicar que no es una clase final,
+ * open -> Es la palabra reservada para indicar que no es una clase final, por defecto las clases son finales
  * Ya que la una clase con solo 'class' es una clase final
  * */
-open class Persona() {
+open class Persona {
     // Se inicializan
     var documento : String = ""
         get() = field
@@ -25,9 +25,13 @@ open class Persona() {
                 field = value
             }
         }
+    /**
+     * Metodos Set y Get para trabajar
+     * con las variables
+     * */
 
     //Constructor explicito
-    constructor(documento: String, nombre:String) : this() {
+    constructor(documento: String, nombre:String) {
         //Se asigna el documento y edad
         this.documento = documento
         this.nombre = nombre
@@ -37,10 +41,7 @@ open class Persona() {
         return "Persona(documento='$documento', nombre='$nombre', edad=$edad)"
     }
 
-    /**
-     * Metodos Set y Get para trabajar
-     * con las variables
-     * */
+
 
 
 
