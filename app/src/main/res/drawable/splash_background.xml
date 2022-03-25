@@ -6,11 +6,10 @@
     <item android:drawable="@color/color_primary"/>
 
     <item
-        android:left="10dp"
-        android:right="10dp"
-        android:top="260dp"
-        android:bottom="260dp">
-        <bitmap android:src="@drawable/splashlogo"/>
+        android:gravity="top"
+
+        >
+        <bitmap android:src="@drawable/ic_baseline_menu_book_24"/>
 
     </item>
 

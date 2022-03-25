@@ -12,9 +12,20 @@
         <item name="android:windowBackground">@drawable/splash_background</item>
     </style>
 
-    <!---->
+    <!--Estilo botones-->
     <style name="App">App</style>
     <style name="App.btn">
-        <item name=""></item>
+        <item name="android:background">
+            @drawable/button_default
+        </item>
+        <item name="colorPrimary">@color/color_btn</item>
+    </style>
+    
+    <!--Estilo de vistas anunciantes-->
+    <style name="App.txtAnunLeft">
+        <item name="android:background">
+            @drawable/text_anuncio_default
+        </item>
+        <item name="colorPrimary">@color/color_fondo</item>
     </style>
 </resources>

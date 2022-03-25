@@ -40,4 +40,6 @@ class MainActivity : AppCompatActivity() {
         var txtView = findViewById<TextView>(R.id.txtView)
         txtView.text = newEstudiante.toString()
     }
+
+
 }

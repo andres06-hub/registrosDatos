@@ -9,14 +9,64 @@
 
     <TextView
         android:id="@+id/txtView"
-        android:layout_width="277dp"
-        android:layout_height="225dp"
-        android:text="Hello world!"
+        android:layout_width="280dp"
+        android:layout_height="114dp"
+        android:gravity="center"
+        android:text="Mis pequeños saltamontes"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.097" />
+
+    <android.widget.Button
+        android:id="@+id/btnRegistrate"
+        style="@style/App.btn"
+        android:layout_width="316dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/ic_baseline_app_registration_24"
+        android:paddingLeft="90dp"
+        android:paddingRight="80dp"
+        android:text="Registrate!"
+        app:layout_constraintBottom_toTopOf="@+id/btnEstadisticas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.876" />
+
+    <android.widget.Button
+        android:id="@+id/btnEstadisticas"
+        style="@style/App.btn"
+        android:layout_width="316dp"
+        android:layout_height="101dp"
+        android:text="Estadisticas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.623" />
+
+    <android.widget.Button
+        android:id="@+id/btnAyuda"
+        style="@style/App.btn"
+        android:layout_width="102dp"
+        android:layout_height="62dp"
+        android:drawableStart="80dp"
+        android:drawableLeft="@drawable/ic_baseline_help_24"
+        android:paddingLeft="10dp"
+        android:paddingRight="8dp"
+        android:text="Ayuda"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.908" />
 </android.support.constraint.ConstraintLayout>
