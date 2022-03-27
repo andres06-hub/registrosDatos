@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StatisticsActivity">
+    tools:context=".HelpActivity">
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="189dp"
-        android:layout_height="100dp"
+        android:id="@+id/textView2"
+        android:layout_width="139dp"
+        android:layout_height="101dp"
+        android:text="Ayuda"
         android:gravity="center"
-        android:text="Statitics"
-        android:textSize="30dp"
+        android:textSize="35dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

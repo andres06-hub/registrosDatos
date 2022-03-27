@@ -16,6 +16,7 @@
         <entry key="app/src/main/res/drawable/splash_background.xml" value="0.1435" />
         <entry key="app/src/main/res/drawable/text_anuncio_default.xml" value="0.1" />
         <entry key="app/src/main/res/layout-land/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_ayuda.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_registro.xml" value="0.16019417475728157" />
         <entry key="app/src/main/res/layout/activity_registro2.xml" value="0.13768115942028986" />

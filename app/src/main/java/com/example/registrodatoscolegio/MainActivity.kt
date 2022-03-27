@@ -32,6 +32,15 @@ class MainActivity : AppCompatActivity() {
             startActivity(statitics)
         }
 
+        //Ventana de ayuda
+        var btnAHelp = findViewById<Button>(R.id.btnAyuda)
+        btnAHelp.setOnClickListener{
+            //Indicamos donde ir
+            val help: Intent = Intent(this, HelpActivity::class.java)
+            //Iniciamos la actividad
+            startActivity(help)
+        }
+
     }
 
 
