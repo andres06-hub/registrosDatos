@@ -1,6 +1,6 @@
 package com.example.registrodatoscolegio.Clases
 
-class Estudiante : Persona(documento = "", nombre = ""), ContenedorMaterias {
+class Estudiante : Person(documento = "", nombre = ""), ContenedorMaterias {
 
     /**
      * Clase de estudiante que contendra la HERENCIA de 'Persona'
@@ -24,5 +24,10 @@ class Estudiante : Persona(documento = "", nombre = ""), ContenedorMaterias {
     override fun calcularPromedio(): Double {
         return 0.0
     }
+
+    override fun toString(): String {
+        return "Estudiante(documento='$document', nombre='$name', edad=$age, phoneNumber='$phoneNumber', direction='$direction')"
+    }
+
 
 }

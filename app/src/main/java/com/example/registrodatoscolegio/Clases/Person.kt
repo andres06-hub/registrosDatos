@@ -4,19 +4,19 @@ package com.example.registrodatoscolegio.Clases
  * open -> Es la palabra reservada para indicar que no es una clase final, por defecto las clases son finales
  * Ya que la una clase con solo 'class' es una clase final
  * */
-open class Persona {
+open class Person {
     // Se inicializan
-    var documento : String = ""
+    var document : String = ""
         get() = field
         set(value) {
             field = value
         }
-    var nombre : String = ""
+    var name : String = ""
         get() = field
         set(value) {
             field = value
         }
-    var edad : Int = 0
+    var age : Int = 0
         get() = field
         set(value) {
             // validamos si el dato ingresado cumpla
@@ -33,13 +33,10 @@ open class Persona {
     //Constructor explicito
     constructor(documento: String, nombre:String) {
         //Se asigna el documento y edad
-        this.documento = documento
-        this.nombre = nombre
+        this.document = documento
+        this.name = nombre
     }
 
-    override fun toString(): String {
-        return "Persona(documento='$documento', nombre='$nombre', edad=$edad)"
-    }
 
 
 

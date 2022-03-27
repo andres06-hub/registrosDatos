@@ -18,10 +18,12 @@
         <activity
             android:name=".RegistroActivity"
             android:exported="true" />
+        <!--
         <activity
             android:name=".SplashActivity"
             android:exported="true"
             android:theme="@style/SplashTheme" />
+            -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
