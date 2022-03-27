@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/color_primary">
+    android:background="#202337">
 
     <TextView
         android:id="@+id/txtView"
@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.097" />
 
-    <android.widget.Button
+    <Button
         android:id="@+id/btnRegistrate"
         style="@style/App.btn"
         android:layout_width="316dp"
@@ -33,15 +33,16 @@
         android:paddingLeft="90dp"
         android:paddingRight="80dp"
         android:text="Registrate!"
-        app:layout_constraintBottom_toTopOf="@+id/btnEstadisticas"
+        app:layout_constraintBottom_toTopOf="@+id/btnStatitics"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.876" />
+        app:layout_constraintVertical_bias="0.876"
+        />
 
-    <android.widget.Button
-        android:id="@+id/btnEstadisticas"
+    <Button
+        android:id="@+id/btnStatitics"
         style="@style/App.btn"
         android:layout_width="316dp"
         android:layout_height="101dp"
@@ -53,12 +54,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.623" />
 
-    <android.widget.Button
+    <Button
         android:id="@+id/btnAyuda"
         style="@style/App.btn"
         android:layout_width="102dp"
         android:layout_height="62dp"
-        android:drawableStart="80dp"
         android:drawableLeft="@drawable/ic_baseline_help_24"
         android:paddingLeft="10dp"
         android:paddingRight="8dp"
@@ -69,4 +69,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.908" />
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

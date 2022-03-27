@@ -7,6 +7,18 @@ class Estudiante : Persona(documento = "", nombre = ""), ContenedorMaterias {
      * Interface de 'ContenedorMaterias' -> Que le asignamos como lo hara, pero ya sabemos que debe de tener
      * */
 
+    var phoneNumber : String = ""
+        get() = field
+        set(value) {
+            field = value
+        }
+    var direction : String = ""
+        get() = field
+        set(value) {
+            field = value
+        }
+
+
     override var materias : ArrayList<Materia> = ArrayList()
 
     override fun calcularPromedio(): Double {

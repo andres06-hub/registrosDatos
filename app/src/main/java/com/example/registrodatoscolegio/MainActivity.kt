@@ -1,8 +1,10 @@
 package com.example.registrodatoscolegio
 
-import android.support.v7.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import com.example.registrodatoscolegio.Clases.ContenedorMaterias
 import com.example.registrodatoscolegio.Clases.Estudiante
 import com.example.registrodatoscolegio.Clases.Materia
@@ -12,34 +14,27 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //Iniciamos
-        iniciar()
-    }
-
-    private fun iniciar() {
-        //Creamos el objeto
-        var newEstudiante: Estudiante = Estudiante()
-        var materia : Materia = Materia()
-        materia.nombre = "Mate"
-        materia.nota = 5.0
-        newEstudiante.materias.add(materia)
-        newEstudiante.calcularPromedio()
-
-        //datos
-        var documento:String = "001"
-        var nombre:String = "Andres"
-        var edad:Int = 5
-
-        newEstudiante.documento="001"
-        newEstudiante.nombre="Andres"
-
-        if (edad > 0){
-            newEstudiante.edad=edad
+        //Ventana SIGN-UP
+        var btnRegistrate = findViewById<Button>(R.id.btnRegistrate)
+        btnRegistrate.setOnClickListener{
+            //decimos a donde se va a ir
+            val registrar : Intent = Intent(this, RegistroActivity::class.java)
+            //Iniciamos la actividad
+            startActivity(registrar)
         }
-        print(newEstudiante.toString())
-        var txtView = findViewById<TextView>(R.id.txtView)
-        txtView.text = newEstudiante.toString()
+
+        // Ventana Statitics
+        var btnStatitics = findViewById<Button>(R.id.btnStatitics)
+        btnStatitics.setOnClickListener{
+            //Indicamos a dode ira
+            val statitics:Intent = Intent(this, StatisticsActivity::class.java)
+            //Iniciamos la actividad
+            startActivity(statitics)
+        }
+
     }
+
+
 
 
 }
