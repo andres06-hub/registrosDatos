@@ -180,50 +180,6 @@
                 android:paddingRight="20dp">
 
                 <EditText
-                    android:id="@+id/txtNameMatter"
-                    android:layout_width="185dp"
-                    android:layout_height="57dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginBottom="0dp"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:hint="Name Matter"
-                    android:inputType="textPersonName"
-                    android:textColor="@color/white"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/editTxtValue"
-                    app:layout_constraintHorizontal_bias="0.372"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textViewSubjects"
-                    app:layout_constraintVertical_bias="1.0" />
-
-                <EditText
-                    android:id="@+id/txtValue"
-                    android:layout_width="179dp"
-                    android:layout_height="57dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginBottom="0dp"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:hint="Value"
-                    android:textColor="@color/white"
-                    android:inputType="textPersonName"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textViewSubjects"
-                    app:layout_constraintVertical_bias="1.0" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="0dp"
-                android:orientation="horizontal"
-                android:paddingLeft="30dp"
-                android:paddingTop="25dp"
-                android:paddingRight="20dp">
-
-                <EditText
                     android:id="@+id/txtNameMatter1"
                     android:layout_width="185dp"
                     android:layout_height="57dp"
@@ -257,6 +213,183 @@
                     app:layout_constraintTop_toBottomOf="@+id/textViewSubjects"
                     app:layout_constraintVertical_bias="1.0" />
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:orientation="horizontal"
+                android:paddingLeft="30dp"
+                android:paddingTop="25dp"
+                android:paddingRight="20dp">
+
+                <EditText
+                    android:id="@+id/txtNameMatter2"
+                    android:layout_width="185dp"
+                    android:layout_height="57dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Name Matter"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/editTxtValue"
+                    app:layout_constraintHorizontal_bias="0.372"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewSubjects"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <EditText
+                    android:id="@+id/txtValue2"
+                    android:layout_width="179dp"
+                    android:layout_height="57dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Value"
+                    android:textColor="@color/white"
+                    android:inputType="textPersonName"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewSubjects"
+                    app:layout_constraintVertical_bias="1.0" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:orientation="horizontal"
+                android:paddingLeft="30dp"
+                android:paddingTop="25dp"
+                android:paddingRight="20dp">
+
+                <EditText
+                    android:id="@+id/txtNameMatter3"
+                    android:layout_width="185dp"
+                    android:layout_height="57dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Name Matter"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/editTxtValue"
+                    app:layout_constraintHorizontal_bias="0.372"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewSubjects"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <EditText
+                    android:id="@+id/txtValue3"
+                    android:layout_width="179dp"
+                    android:layout_height="57dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Value"
+                    android:textColor="@color/white"
+                    android:inputType="textPersonName"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewSubjects"
+                    app:layout_constraintVertical_bias="1.0" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:orientation="horizontal"
+                android:paddingLeft="30dp"
+                android:paddingTop="25dp"
+                android:paddingRight="20dp">
+
+                <EditText
+                    android:id="@+id/txtNameMatter4"
+                    android:layout_width="185dp"
+                    android:layout_height="57dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Name Matter"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/editTxtValue"
+                    app:layout_constraintHorizontal_bias="0.372"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewSubjects"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <EditText
+                    android:id="@+id/txtValue4"
+                    android:layout_width="179dp"
+                    android:layout_height="57dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Value"
+                    android:textColor="@color/white"
+                    android:inputType="textPersonName"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewSubjects"
+                    app:layout_constraintVertical_bias="1.0" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:orientation="horizontal"
+                android:paddingLeft="30dp"
+                android:paddingTop="25dp"
+                android:paddingRight="20dp">
+
+                <EditText
+                    android:id="@+id/txtNameMatter5"
+                    android:layout_width="185dp"
+                    android:layout_height="57dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Name Matter"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/editTxtValue"
+                    app:layout_constraintHorizontal_bias="0.372"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewSubjects"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <EditText
+                    android:id="@+id/txtValue5"
+                    android:layout_width="179dp"
+                    android:layout_height="57dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Value"
+                    android:textColor="@color/white"
+                    android:inputType="textPersonName"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewSubjects"
+                    app:layout_constraintVertical_bias="1.0" />
+            </LinearLayout>
+
 
 
             <!--Button Send Data-->
@@ -266,7 +399,8 @@
                 android:layout_gravity="bottom"
                 android:gravity="center"
                 android:orientation="horizontal"
-                android:paddingTop="0dp">
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp">
 
                 <Button
                     android:id="@+id/btnEnviar"
@@ -278,6 +412,31 @@
                     android:paddingLeft="15dp"
                     android:paddingRight="10dp"
                     android:text="Send"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </LinearLayout>
+            <!--Button Back-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="50dp">
+
+                <Button
+                    android:id="@+id/btnReturn"
+                    style="@style/App.btn"
+                    android:layout_width="110dp"
+                    android:layout_height="43dp"
+                    android:layout_marginBottom="0dp"
+                    android:drawableLeft="@drawable/return_button"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:text="return"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.496"

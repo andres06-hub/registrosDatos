@@ -15,16 +15,14 @@ class Model : Serializable{
             //PAsamos por cada objeto guardado en la lista
             for ( user in listStudent){
                 //Verificamos si el estudiante existe
-                if (!(student.document.equals(user.document))){
-                    //User not exists!
-                    //Como es con negación, entonces se asigna proque el user no existe
-                    // Lo guardamos
-                    listStudent.add(student)
-                    return true
+                if (student.document.equals(user.document)){
+                    //Student exists
+                    return false
                 }
-                //User exists!
-                return false
             }
+            // Si no se encuentra ninguna coincidencia con algun estudiante
+            listStudent.add(student)
+            return true
         }
         listStudent.add(student)
         return true

@@ -7,66 +7,89 @@
     tools:context=".MainActivity"
     android:background="#202337">
 
-    <TextView
-        android:id="@+id/txtView"
-        android:layout_width="280dp"
-        android:layout_height="114dp"
-        android:gravity="center"
-        android:text="My little grasshoppers"
-        android:textColor="@color/white"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.519"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.097" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/btnRegistrate"
-        style="@style/App.btn"
-        android:layout_width="316dp"
-        android:layout_height="101dp"
-        android:layout_marginTop="16dp"
-        android:drawableLeft="@drawable/ic_baseline_app_registration_24"
-        android:paddingLeft="90dp"
-        android:paddingRight="80dp"
-        android:text="Enter data"
-        app:layout_constraintBottom_toTopOf="@+id/btnStatitics"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.876"
-        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btnStatitics"
-        style="@style/App.btn"
-        android:layout_width="316dp"
-        android:layout_height="101dp"
-        android:text="Statitics"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.623" />
+            <TextView
+                android:id="@+id/txtView"
+                android:layout_width="280dp"
+                android:layout_height="114dp"
+                android:gravity="center"
+                android:text="My little grasshoppers"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.519"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.097" />
 
-    <Button
-        android:id="@+id/btnAyuda"
-        style="@style/App.btn"
-        android:layout_width="102dp"
-        android:layout_height="62dp"
-        android:drawableLeft="@drawable/ic_baseline_help_24"
-        android:paddingLeft="10dp"
-        android:paddingRight="8dp"
-        android:text="Help"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.908" />
+            <Button
+                android:id="@+id/btnRegistrate"
+                style="@style/App.btn"
+                android:layout_width="316dp"
+                android:layout_height="101dp"
+                android:drawableLeft="@drawable/ic_baseline_app_registration_24"
+                android:paddingLeft="90dp"
+                android:paddingRight="80dp"
+                android:text="Enter data"
+                android:layout_gravity="center"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="50dp"
+                app:layout_constraintBottom_toTopOf="@+id/btnStatitics"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.876"
+                />
+
+            <Button
+                android:id="@+id/btnStatitics"
+                style="@style/App.btn"
+                android:layout_width="316dp"
+                android:layout_height="101dp"
+                android:text="Statitics"
+                android:layout_gravity="center"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.623" />
+
+            <Button
+                android:id="@+id/btnAyuda"
+                style="@style/App.btn"
+                android:layout_width="102dp"
+                android:layout_height="62dp"
+                android:drawableLeft="@drawable/ic_baseline_help_24"
+                android:paddingLeft="10dp"
+                android:paddingRight="8dp"
+                android:text="Help"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.908" />
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

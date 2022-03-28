@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import com.example.registrodatoscolegio.Clases.ContenedorMaterias
 import com.example.registrodatoscolegio.Clases.Estudiante
@@ -76,6 +77,21 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
+    //Funcion para obtener los datos pasados de la otra actividad
+    private val response = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){ valor ->
+
+        if (valor.resultCode == RESULT_OK){
+            //resp y resp 2 almacenan el mismo dato, solo se muestran 2 formas como podria capturarse el dato
+            val resp = valor?.data?.extras?.get("resultado") as String
+            val resp2 = valor?.data?.getStringExtra("resultado")
+            println("Valor respuesta=$resp y la resps2=$resp2")
+            //capturamos el objeto nuevo y lo asignamos a operaciones
+            model = valor?.data?.extras?.get("objetoOperaciones") as Model?
+            model?.getEstudiantes()
+        }
+    }
+
 
 
 

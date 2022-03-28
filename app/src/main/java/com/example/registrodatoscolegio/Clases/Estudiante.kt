@@ -1,6 +1,8 @@
 package com.example.registrodatoscolegio.Clases
 
-class Estudiante : Person(documento = "", nombre = ""), ContenedorMaterias {
+import java.io.Serializable
+
+class Estudiante : Person(documento = "", nombre = ""), ContenedorMaterias , Serializable{
 
     /**
      * Clase de estudiante que contendra la HERENCIA de 'Persona'

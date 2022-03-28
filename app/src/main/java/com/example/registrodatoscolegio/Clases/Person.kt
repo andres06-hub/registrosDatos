@@ -1,10 +1,13 @@
 package com.example.registrodatoscolegio.Clases
+
+import java.io.Serializable
+
 /**
  * Para aplicar Herencia seria, en este caso esta es la clase que va a heredar
  * open -> Es la palabra reservada para indicar que no es una clase final, por defecto las clases son finales
  * Ya que la una clase con solo 'class' es una clase final
  * */
-open class Person {
+open class Person : Serializable{
     // Se inicializan
     var document : String = ""
         get() = field
