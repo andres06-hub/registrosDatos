@@ -32,7 +32,7 @@ class RegistroActivity : AppCompatActivity() {
         iniciarComponentes()
 
     }
-
+    //TODO ORGANIZAR EL PASO DE DATOS
     override fun onKeyDown(keyCode: Int, event: KeyEvent?) : Boolean {
         if (keyCode==KeyEvent.KEYCODE_BACK){
             Toast.makeText(this, "Se cierra el registro Activity", Toast.LENGTH_SHORT).show()
@@ -79,6 +79,10 @@ class RegistroActivity : AppCompatActivity() {
          * */
         //llamamos la funcion y le pasamos el mapa
         var newStudent : Estudiante = createStudent(dataStudent)
+        //Sacamos el promedio
+        var promedio : Double = newStudent.calcularPromedio()
+        print("PROMEDIO ::: " + promedio)
+
         /**
          * Guardamos el usuario
          * */
@@ -230,7 +234,7 @@ class RegistroActivity : AppCompatActivity() {
         //println("Cantidad registros = " + lista.size)
         return newEstudiante
     }
-
+    /**Funcion que controla guardar el estudiante credo*/
     fun saveStudent(student : Estudiante) : Boolean  {
         //Guardamos el estudiante
         var saveStudent = model?.saveStudent(student)

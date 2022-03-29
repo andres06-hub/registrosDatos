@@ -59,13 +59,19 @@ class MainActivity : AppCompatActivity() {
                 registrar.putExtras(miBundle)
                 registrar.putExtra("objeto",model)
                 //Iniciamos la actividad
-                startActivity(registrar)
+                //startActivity(registrar)
+                response.launch(registrar)
             }
             2->{
                 //Indicamos a dode ira
                 val statitics:Intent = Intent(this, StatisticsActivity::class.java)
-                //Iniciamos la actividad
-                startActivity(statitics)
+                var miBundle:Bundle = Bundle()
+                miBundle.putSerializable("model",model)
+                //le pasamos la informacion al intent para que sea enviada
+                statitics.putExtras(miBundle)
+                statitics.putExtra("objeto",model)
+                response.launch(statitics)
+
 
             }
             3->{
@@ -77,7 +83,7 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
-
+    //TODO -> ORGANIZAR EL PASO DE DATOS
     //Funcion para obtener los datos pasados de la otra actividad
     private val response = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){ valor ->
 

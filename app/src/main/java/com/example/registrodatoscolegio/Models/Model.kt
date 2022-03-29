@@ -5,10 +5,19 @@ import java.io.Serializable
 
 class Model : Serializable{
     // Clase encargada de almacenar el onjeto estudiante
-
+    // -> Lista de los estudiantes
     var listStudent : MutableList<Estudiante> = mutableListOf()
 
-    //Obtener studiante creado y guardarlo
+    //lista de estudiantes que pierden
+    var listStudentLose: MutableList<Estudiante> = mutableListOf()
+
+    //lista de estudiantes que ganan
+    var listStudenWinner: MutableList<Estudiante> = mutableListOf()
+
+    //lista de estudiantes que pueden recuperar
+    var listStudentRecover: MutableList<Estudiante> = mutableListOf()
+
+    /**Obtener studiante creado y guardarlo*/
     fun saveStudent(student : Estudiante) : Boolean{
 
         if ((listStudent.size > 0)){
@@ -28,7 +37,7 @@ class Model : Serializable{
         return true
     }
 
-    // funcion encargada de mostrarme los estudiantes registrados
+    /** funcion encargada de mostrarme los estudiantes registrados*/
     fun getEstudiantes() : String{
         // Creamos una cadena
         var cadena : String = ""
@@ -47,7 +56,7 @@ class Model : Serializable{
         return cadena
     }
 
-    //Funcion encargada de obtenerme UN SOLO estudiante en ESPECIFICO
+    /**Funcion encargada de obtenerme UN SOLO estudiante en ESPECIFICO*/
     fun getEstudiante(document : String) : String{
 
         //Se crea una cadena
@@ -86,9 +95,26 @@ class Model : Serializable{
         return "No hay pacientes Registrados!"
     }
 
-    //Cantidad de Estudiantes registrados
+    /**Cantidad de Estudiantes registrados*/
     fun studentsRegisters() : Int{
         return listStudent.size
     }
 
+    /**Funcion encargada de guardar los estudiantes que pierden*/
+    fun studentLose (student : Estudiante){
+        //Agregamos el estudiante
+        listStudentLose.add(student)
+    }
+
+    /**Funcion encargada de guardar los estudiantes que ganan*/
+    fun studenWinner(student : Estudiante){
+        //Agregamos el estudiante
+        listStudenWinner.add(student)
+    }
+
+    /**Funcion encargada de guardar los que recuperan*/
+    fun studenRecover(student : Estudiante){
+        //Agregamos
+        listStudentRecover.add(student)
+    }
 }

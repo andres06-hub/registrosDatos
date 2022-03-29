@@ -23,8 +23,16 @@ class Estudiante : Person(documento = "", nombre = ""), ContenedorMaterias , Ser
 
     override var materias : ArrayList<Materia> = ArrayList()
 
-    override fun calcularPromedio(): Double {
-        return 0.0
+    override fun calcularPromedio() : Double {
+        var suma:Double = 0.0
+        for(materia in materias){
+            //Se van sumando
+            suma = suma + materia.nota
+        }
+        //Sacamos el promedio
+        var promedio : Double = suma / materias.size
+        return promedio
+
     }
 
     override fun toString(): String {
