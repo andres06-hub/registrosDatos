@@ -10,4 +10,14 @@
     <string name="direction">Direction</string>
     <string name="subjects">Subjects</string>
 
+
+    <!-- Pantalla Help -->
+    <string name="textHelp">
+        El aplicativo consiste en registrar usuarios de tipo estudiante para el registro de notas,
+        asi poder validar su porcentaje y definir el estado en el que puede estar.
+
+        Pasos para utilizar la app:
+        1)
+    </string>
+
 </resources>

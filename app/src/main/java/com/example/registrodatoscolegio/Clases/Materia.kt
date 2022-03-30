@@ -20,7 +20,7 @@ class Materia : Serializable{
         get() = field
         set(value) {
             // Si se cumple
-            if (value > 0.0 && value < 5.0){
+            if (value >= 0.0 && value <= 5.0){
                 // Se asigan el valor
                 field = value
             }

@@ -95,19 +95,19 @@ class RegistroActivity : AppCompatActivity() {
         if (resultsStudent){
             var toast = Toast(this).apply { setText("Succesful registration") }
             toast.show()
+
+            //////////////////////////////////////////////////////////////////////
+            //Sacamos el promedio
+            var promedio : Double = newStudent.calcularPromedio()
+            print("PROMEDIO ::: " + promedio)
+            //VALIDAR EL ESTADO DEL ESTUDIANTE -> (PIERDE, GANA, RECUPERA)
+            statusStudent(promedio, newStudent)
+            //////////////////////////////////////////////////////////////////////
+
         }else{
             var toast = Toast(this).apply { setText("User Exists!") }
             toast.show()
         }
-
-        //////////////////////////////////////////////////////////////////////
-        //Sacamos el promedio
-        var promedio : Double = newStudent.calcularPromedio()
-        print("PROMEDIO ::: " + promedio)
-        //VALIDAR EL ESTADO DEL ESTUDIANTE -> (PIERDE, GANA, RECUPERA)
-        statusStudent(promedio, newStudent)
-        //////////////////////////////////////////////////////////////////////
-
         //Cantidad de estudiantes registrados
         var catidadStudents = model?.studentsRegisters()
         println(catidadStudents)
@@ -266,13 +266,13 @@ class RegistroActivity : AppCompatActivity() {
         //Validamos -> SI gana
         if (promedio >= 3.5 ){
             //Se agrega a la lista
-            model?.listStudenWinner?.add(student)
+            model?.studenWinner(student)
         }else if ( promedio >= 2.5 && promedio < 3.5){
             //Puede recuperar
-            model?.listStudentRecover?.add(student)
+            model?.studenRecover(student)
         }else if (promedio < 2.5){
             //Pierde la materia
-            model?.listStudentLose?.add(student)
+            model?.studentLose(student)
         }
     }
 }
