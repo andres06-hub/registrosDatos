@@ -28,9 +28,11 @@ class Estudiante : Person(documento = "", nombre = ""), ContenedorMaterias , Ser
         for(materia in materias){
             //Se van sumando
             suma = suma + materia.nota
+            println("Sumando nota: " + materia.nota)
         }
         //Sacamos el promedio
         var promedio : Double = suma / materias.size
+        //println("PROMEDIO :: " + promedio)
         return promedio
 
     }

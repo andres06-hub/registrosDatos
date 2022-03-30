@@ -74,14 +74,18 @@ class RegistroActivity : AppCompatActivity() {
         // Se almacenan en un mapa
         var dataStudent : HashMap<String, String> = getData()
 
+        /////////////////////////////////////////////////////////
         /**
          * Creamos el usuario
          * */
         //llamamos la funcion y le pasamos el mapa
         var newStudent : Estudiante = createStudent(dataStudent)
-        //Sacamos el promedio
-        var promedio : Double = newStudent.calcularPromedio()
-        print("PROMEDIO ::: " + promedio)
+        println("Materias new student:: " + newStudent.materias.size)
+
+        for( materia: Materia in newStudent.materias) {
+            println("Materia :: " + materia.nombre);
+            println("Nota :: " + materia.nota);
+        }
 
         /**
          * Guardamos el usuario
@@ -95,6 +99,15 @@ class RegistroActivity : AppCompatActivity() {
             var toast = Toast(this).apply { setText("User Exists!") }
             toast.show()
         }
+
+        //////////////////////////////////////////////////////////////////////
+        //Sacamos el promedio
+        var promedio : Double = newStudent.calcularPromedio()
+        print("PROMEDIO ::: " + promedio)
+        //VALIDAR EL ESTADO DEL ESTUDIANTE -> (PIERDE, GANA, RECUPERA)
+        statusStudent(promedio, newStudent)
+        //////////////////////////////////////////////////////////////////////
+
         //Cantidad de estudiantes registrados
         var catidadStudents = model?.studentsRegisters()
         println(catidadStudents)
@@ -244,5 +257,22 @@ class RegistroActivity : AppCompatActivity() {
         if(!(saveStudent == true)){ return false }
         //Es true -> successful registration
         return true
+    }
+
+    /**
+     * Funcion que define el estado del estudiante (PIERDE; GANA; RECUPERA)
+     * */
+    fun statusStudent(promedio: Double, student: Estudiante){
+        //Validamos -> SI gana
+        if (promedio >= 3.5 ){
+            //Se agrega a la lista
+            model?.listStudenWinner?.add(student)
+        }else if ( promedio >= 2.5 && promedio < 3.5){
+            //Puede recuperar
+            model?.listStudentRecover?.add(student)
+        }else if (promedio < 2.5){
+            //Pierde la materia
+            model?.listStudentLose?.add(student)
+        }
     }
 }

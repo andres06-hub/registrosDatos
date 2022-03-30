@@ -4,6 +4,7 @@ import java.io.Serializable
 
 class Materia : Serializable{
 
+
     /**
      * Clase para definir la materia lo que tiene una materia
      * Atributos
@@ -23,6 +24,6 @@ class Materia : Serializable{
                 // Se asigan el valor
                 field = value
             }
-            field = 0.0
+
         }
 }
