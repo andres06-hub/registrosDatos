@@ -32,7 +32,8 @@ class RegistroActivity : AppCompatActivity() {
         iniciarComponentes()
 
     }
-    //TODO ORGANIZAR EL PASO DE DATOS
+
+
     override fun onKeyDown(keyCode: Int, event: KeyEvent?) : Boolean {
         if (keyCode==KeyEvent.KEYCODE_BACK){
             Toast.makeText(this, "Se cierra el registro Activity", Toast.LENGTH_SHORT).show()
