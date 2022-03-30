@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.registrodatoscolegio.Clases.Estudiante
 import com.example.registrodatoscolegio.Clases.Materia
@@ -104,6 +105,8 @@ class RegistroActivity : AppCompatActivity() {
             //VALIDAR EL ESTADO DEL ESTUDIANTE -> (PIERDE, GANA, RECUPERA)
             statusStudent(promedio, newStudent)
             //////////////////////////////////////////////////////////////////////
+
+
 
         }else{
             var toast = Toast(this).apply { setText("User Exists!") }
@@ -268,6 +271,10 @@ class RegistroActivity : AppCompatActivity() {
         if (promedio >= 3.5 ){
             //Se agrega a la lista
             model?.studenWinner(student)
+
+            //LLamamos la alerta
+            menssageDialogWinner()
+
         }else if ( promedio >= 2.5 && promedio < 3.5){
             //Puede recuperar
             model?.studenRecover(student)
@@ -275,5 +282,29 @@ class RegistroActivity : AppCompatActivity() {
             //Pierde la materia
             model?.studentLose(student)
         }
+    }
+    // funcion que se encargan de dar un dialogo segun pierda o gane
+    fun menssageDialogWinner(){
+
+        var builder = AlertDialog.Builder(this@RegistroActivity)
+        var view = layoutInflater.inflate(R.layout.alert_dialog, null)
+
+        //pasamos la vista al builder
+        builder.setView(view)
+        //Creado el dialogo
+        var dialogo = builder.create()
+
+        dialogo.show()
+
+
+
+    }
+
+    fun menssageDialogLose(){
+
+    }
+
+    fun menssageDialogRecover(){
+
     }
 }

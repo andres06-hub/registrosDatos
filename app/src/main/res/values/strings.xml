@@ -14,10 +14,13 @@
     <!-- Pantalla Help -->
     <string name="textHelp">
         El aplicativo consiste en registrar usuarios de tipo estudiante para el registro de notas,
-        asi poder validar su porcentaje y definir el estado en el que puede estar.
-
-        Pasos para utilizar la app:
-        1)
+        asi poder validar su promedio y definir el estado en el que puede estar.
+        "\n\n"
+        Pasos para utilizar la app:"\n"
+        "\t\t"1) Registrar estudiante : Este se encarga de tomar los datos necesarios para registrarlo y procesar su promedio
+        "\n\n"
+        "\t\t"2) Statistics : Este espacio aparecenra cuantos gano, perdio y podran recuperar
+        "\n\n"
     </string>
 
 </resources>

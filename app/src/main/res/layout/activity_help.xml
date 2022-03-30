@@ -7,12 +7,9 @@
     tools:context=".HelpActivity">
 
     <ScrollView
-        android:layout_width="409dp"
-        android:layout_height="729dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -21,8 +18,9 @@
 
            <LinearLayout
                android:layout_width="match_parent"
-               android:layout_height="100dp"
-               android:layout_marginTop="30dp">
+               android:layout_height="wrap_content"
+               android:layout_marginTop="30dp"
+               android:orientation="vertical">
 
                <TextView
                    android:layout_width="match_parent"
@@ -38,7 +36,9 @@
                    android:layout_height="wrap_content"
                    android:text="@string/textHelp"
                    android:textStyle="italic"
-                   android:textColor="@color/black"/>
+                   android:textColor="@color/black"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginRight="20dp"/>
 
            </LinearLayout>
         </LinearLayout>
