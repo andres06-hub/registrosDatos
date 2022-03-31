@@ -176,20 +176,20 @@
                 android:layout_marginTop="0dp"
                 android:layout_marginBottom="0dp"
                 android:orientation="horizontal"
+                android:layout_gravity="center"
                 android:paddingLeft="30dp"
                 android:paddingTop="25dp"
                 android:paddingRight="20dp">
 
-                <EditText
+                <TextView
                     android:id="@+id/txtNameMatter1"
-                    android:layout_width="185dp"
-                    android:layout_height="57dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="80dp"
+                    android:layout_marginLeft="15dp"
                     android:layout_marginBottom="0dp"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:hint="Name Matter"
-                    android:inputType="textPersonName"
+                    android:text="Programming"
+                    android:textStyle="bold"
                     android:textColor="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/editTxtValue"
@@ -224,15 +224,15 @@
                 android:paddingTop="25dp"
                 android:paddingRight="20dp">
 
-                <EditText
+                <TextView
                     android:id="@+id/txtNameMatter2"
-                    android:layout_width="185dp"
+                    android:layout_width="150dp"
                     android:layout_height="57dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="10dp"
                     android:layout_marginBottom="0dp"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:hint="Name Matter"
+                    android:text="Maths"
+                    android:textStyle="bold"
                     android:inputType="textPersonName"
                     android:textColor="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -268,15 +268,15 @@
                 android:paddingTop="25dp"
                 android:paddingRight="20dp">
 
-                <EditText
+            <TextView
                     android:id="@+id/txtNameMatter3"
-                    android:layout_width="185dp"
+                    android:layout_width="172dp"
                     android:layout_height="57dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginLeft="10dp"
                     android:layout_marginBottom="0dp"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:hint="Name Matter"
+                    android:text="Data Bases"
+                    android:textStyle="bold"
                     android:inputType="textPersonName"
                     android:textColor="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -312,15 +312,15 @@
                 android:paddingTop="25dp"
                 android:paddingRight="20dp">
 
-                <EditText
+                <TextView
                     android:id="@+id/txtNameMatter4"
-                    android:layout_width="185dp"
+                    android:layout_width="165dp"
                     android:layout_height="57dp"
+                    android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="0dp"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:hint="Name Matter"
+                    android:text="English"
+                    android:textStyle="bold"
                     android:inputType="textPersonName"
                     android:textColor="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -356,15 +356,15 @@
                 android:paddingTop="25dp"
                 android:paddingRight="20dp">
 
-                <EditText
+                <TextView
                     android:id="@+id/txtNameMatter5"
-                    android:layout_width="185dp"
+                    android:layout_width="162dp"
                     android:layout_height="57dp"
                     android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
                     android:layout_marginBottom="0dp"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:hint="Name Matter"
+                    android:text="software architecture"
+                    android:textStyle="bold"
                     android:inputType="textPersonName"
                     android:textColor="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"

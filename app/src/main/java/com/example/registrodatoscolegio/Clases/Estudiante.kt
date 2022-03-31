@@ -41,5 +41,12 @@ class Estudiante : Person(documento = "", nombre = ""), ContenedorMaterias , Ser
         return "Estudiante(documento='$document', nombre='$name', edad=$age, phoneNumber='$phoneNumber', direction='$direction')"
     }
 
+    //mostrar materias
+    fun showSubjects(){
+        for (materia in materias){
+            materia.nota
+        }
+    }
+
 
 }

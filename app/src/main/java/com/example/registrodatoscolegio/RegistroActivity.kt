@@ -1,17 +1,27 @@
 package com.example.registrodatoscolegio
 
+import android.content.DialogInterface
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
+import android.text.SpannableString
+import android.text.Spanned
+import android.text.style.ForegroundColorSpan
 import android.view.KeyEvent
+import android.view.LayoutInflater
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.graphics.blue
+import androidx.core.graphics.green
+import androidx.core.widget.TextViewCompat
 import com.example.registrodatoscolegio.Clases.Estudiante
 import com.example.registrodatoscolegio.Clases.Materia
 import com.example.registrodatoscolegio.Models.Model
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 
 class RegistroActivity : AppCompatActivity() {
@@ -133,15 +143,15 @@ class RegistroActivity : AppCompatActivity() {
         /**
          * Obtenemos los datos de las materias
          * */
-        var nameMatter1 : String = findViewById<EditText>(R.id.txtNameMatter1).text.toString()
-        var valueMatter1 : String =findViewById<EditText>(R.id.txtValue1).text.toString()
-        var nameMatter2 : String = findViewById<EditText>(R.id.txtNameMatter2).text.toString()
+        var nameMatter1 : String = "Programming"
+        var valueMatter1 : String = findViewById<EditText>(R.id.txtValue1).text.toString()
+        var nameMatter2 : String = "Maths"
         var valueMatter2 : String =findViewById<EditText>(R.id.txtValue2).text.toString()
-        var nameMatter3 : String = findViewById<EditText>(R.id.txtNameMatter3).text.toString()
+        var nameMatter3 : String = "Data Bases"
         var valueMatter3 : String =findViewById<EditText>(R.id.txtValue3).text.toString()
-        var nameMatter4 : String = findViewById<EditText>(R.id.txtNameMatter4).text.toString()
+        var nameMatter4 : String = "English"
         var valueMatter4 : String =findViewById<EditText>(R.id.txtValue4).text.toString()
-        var nameMatter5 : String = findViewById<EditText>(R.id.txtNameMatter5).text.toString()
+        var nameMatter5 : String = ""
         var valueMatter5 : String =findViewById<EditText>(R.id.txtValue5).text.toString()
 
         //Pasamos los valores
@@ -273,38 +283,62 @@ class RegistroActivity : AppCompatActivity() {
             model?.studenWinner(student)
 
             //LLamamos la alerta
-            menssageDialogWinner()
+            menssageDialogWinner(student)
 
         }else if ( promedio >= 2.5 && promedio < 3.5){
             //Puede recuperar
             model?.studenRecover(student)
+            //Llamamos la alerta
+            menssageDialogRecover(student)
+
         }else if (promedio < 2.5){
             //Pierde la materia
             model?.studentLose(student)
+            //Llamamos la alerta
+            menssageDialogLose(student)
         }
     }
     // funcion que se encargan de dar un dialogo segun pierda o gane
-    fun menssageDialogWinner(){
+    fun menssageDialogWinner(student : Estudiante) {
 
-        var builder = AlertDialog.Builder(this@RegistroActivity)
-        var view = layoutInflater.inflate(R.layout.alert_dialog, null)
-
-        //pasamos la vista al builder
-        builder.setView(view)
-        //Creado el dialogo
-        var dialogo = builder.create()
-
-        dialogo.show()
-
-
-
-    }
-
-    fun menssageDialogLose(){
+        AlertDialog.Builder(this).apply {
+            setTitle("Winning Student")
+            setIcon(R.drawable.check_24)
+            setMessage(
+                        "Documento: "+student.document+"\n"+
+                        "Nombre: "+student.name+"\n"+
+                        "PROMEDIO: "+student.calcularPromedio()
+            )
+            setPositiveButton("Ok") { _: DialogInterface, _: Int ->}
+        }.show()
 
     }
 
-    fun menssageDialogRecover(){
+    fun menssageDialogLose(student : Estudiante){
+        AlertDialog.Builder(this).apply {
+            setTitle("Student missing",)
+            setIcon(R.drawable.check_24)
+
+            setMessage(
+                        "Documento: "+student.document+"\n"+
+                        "Nombre: "+student.name+"\n"+
+                        "PROMEDIO: "+student.calcularPromedio()
+            )
+            setPositiveButton("Ok") { _: DialogInterface, _: Int ->}
+        }.show()
+    }
+
+    fun menssageDialogRecover(student : Estudiante){
+        AlertDialog.Builder(this).apply {
+            setTitle("Student Recovering",)
+            setIcon(R.drawable.check_24)
+            setMessage(
+                        "Documento: "+student.document+"\n"+
+                        "Nombre: "+student.name+"\n"+
+                        "PROMEDIO: "+student.calcularPromedio()
+            )
+            setPositiveButton("Ok") { _: DialogInterface, _: Int ->}
+        }.show()
 
     }
 }
