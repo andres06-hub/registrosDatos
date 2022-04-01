@@ -70,7 +70,7 @@ class RegistroActivity : AppCompatActivity() {
 
         // iniciamos
         var btnEnviar = findViewById<Button>(R.id.btnEnviar)
-        btnEnviar.setOnClickListener { onClick(1) }
+        btnEnviar.setOnClickListener { onClick() }
 /**
         //Boton de salir de actividad
         var btnReturn = findViewById<ImageButton>(R.id.btnImgExit)
