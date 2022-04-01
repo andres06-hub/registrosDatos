@@ -6,8 +6,6 @@
     android:layout_height="match_parent"
     android:background="#ECECEC"
     android:orientation="vertical"
-    android:paddingTop="30dp"
-
     tools:context=".RegistroActivity"
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="24dp">
@@ -51,91 +49,105 @@
             </FrameLayout>
 
             <!--Data Strudent-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="408dp"
-                android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
 
-                <EditText
-                    android:id="@+id/txtDocument"
-                    android:layout_width="300dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="24dp"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:hint="@string/document"
-                    android:inputType="textPersonName"
-                    android:textColor="@color/black"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+                >
 
-                <EditText
-                    android:id="@+id/txtName"
-                    android:layout_width="300dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="0dp"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:hint="@string/fullName"
-                    android:textColor="@color/black"
-                    android:inputType="textPersonName"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTxtDocument" />
-
-                <EditText
-                    android:id="@+id/txtAge"
-                    android:layout_width="300dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="0dp"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:textColor="@color/black"
-                    android:hint="@string/age"
-                    android:inputType="number"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTxtName" />
-
-                <EditText
-                    android:id="@+id/txtPhoneNumber"
-                    android:layout_width="300dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="0dp"
-                    android:layout_weight="1"
-                    android:textColor="@color/black"
-                    android:inputType="number"
-                    android:ems="10"
-                    android:hint="@string/phoneNumber"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTxtAge" />
-
-                <EditText
-                    android:id="@+id/txtDirection"
-                    android:layout_width="300dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginBottom="24sp"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:textColor="@color/black"
-                    android:hint="@string/direction"
-                    android:inputType="textPersonName"
-                    app:layout_constraintBottom_toTopOf="@+id/divider"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTxtPhoneNumber"
-                    app:layout_constraintVertical_bias="0.411" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#C3CCDF">
 
 
-            </LinearLayout>
+                    <EditText
+                        android:id="@+id/txtDocument"
+                        android:layout_width="300dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="24dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/document"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/black"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                    <EditText
+                        android:id="@+id/txtName"
+                        android:layout_width="300dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="0dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/fullName"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/black"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editTxtDocument" />
+
+                    <EditText
+                        android:id="@+id/txtAge"
+                        android:layout_width="300dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="0dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/age"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editTxtName" />
+
+                    <EditText
+                        android:id="@+id/txtPhoneNumber"
+                        android:layout_width="300dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="0dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/phoneNumber"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editTxtAge" />
+
+                    <EditText
+                        android:id="@+id/txtDirection"
+                        android:layout_width="300dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="24sp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/direction"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toTopOf="@+id/divider"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editTxtPhoneNumber"
+                        app:layout_constraintVertical_bias="0.411" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
 
 
             <!--Materias-->
@@ -170,226 +182,227 @@
                 app:layout_constraintTop_toBottomOf="@+id/divider"
                 app:layout_constraintVertical_bias="0.0" />
 
-            <LinearLayout
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="0dp"
-                android:orientation="horizontal"
-                android:layout_gravity="center"
-                android:paddingLeft="30dp"
-                android:paddingTop="25dp"
-                android:paddingRight="20dp">
-
-                <TextView
-                    android:id="@+id/txtNameMatter1"
+                android:layout_marginTop="15dp"
+                >
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="80dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginBottom="0dp"
-                    android:text="Programming"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/editTxtValue"
-                    app:layout_constraintHorizontal_bias="0.372"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textViewSubjects"
-                    app:layout_constraintVertical_bias="1.0" />
+                    android:background="#C3CCDF"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    >
 
-                <EditText
-                    android:id="@+id/txtValue1"
-                    android:layout_width="179dp"
-                    android:layout_height="57dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginBottom="0dp"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:hint="Value"
-                    android:textColor="@color/black"
-                    android:inputType="number"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textViewSubjects"
-                    app:layout_constraintVertical_bias="1.0" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="0dp"
-                android:orientation="horizontal"
-                android:paddingLeft="30dp"
-                android:paddingTop="25dp"
-                android:paddingRight="20dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        >
 
-                <TextView
-                    android:id="@+id/txtNameMatter2"
-                    android:layout_width="150dp"
-                    android:layout_height="57dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginBottom="0dp"
-                    android:text="Maths"
-                    android:textStyle="bold"
-                    android:inputType="textPersonName"
-                    android:textColor="@color/black"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/editTxtValue"
-                    app:layout_constraintHorizontal_bias="0.372"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textViewSubjects"
-                    app:layout_constraintVertical_bias="1.0" />
+                        <TextView
+                            android:id="@+id/txtNameMatter1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="80dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginBottom="0dp"
+                            android:text="Programming"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/editTxtValue"
+                            app:layout_constraintHorizontal_bias="0.372"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewSubjects"
+                            app:layout_constraintVertical_bias="1.0" />
 
-                <EditText
-                    android:id="@+id/txtValue2"
-                    android:layout_width="179dp"
-                    android:layout_height="57dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginBottom="0dp"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:hint="Value"
-                    android:textColor="@color/black"
-                    android:inputType="number"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textViewSubjects"
-                    app:layout_constraintVertical_bias="1.0" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="0dp"
-                android:orientation="horizontal"
-                android:paddingLeft="30dp"
-                android:paddingTop="25dp"
-                android:paddingRight="20dp">
+                        <EditText
+                            android:id="@+id/txtValue1"
+                            android:layout_width="179dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="0dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="Value"
+                            android:textColor="@color/black"
+                            android:inputType="number"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewSubjects"
+                            app:layout_constraintVertical_bias="1.0" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="25dp"
+                        android:layout_gravity="center">
 
-            <TextView
-                    android:id="@+id/txtNameMatter3"
-                    android:layout_width="172dp"
-                    android:layout_height="57dp"
-                    android:layout_marginRight="0dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginBottom="0dp"
-                    android:text="Data Bases"
-                    android:textStyle="bold"
-                    android:inputType="textPersonName"
-                    android:textColor="@color/black"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/editTxtValue"
-                    app:layout_constraintHorizontal_bias="0.372"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textViewSubjects"
-                    app:layout_constraintVertical_bias="1.0" />
+                        <TextView
+                            android:id="@+id/txtNameMatter2"
+                            android:layout_width="150dp"
+                            android:layout_height="57dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="0dp"
+                            android:text="Maths"
+                            android:textStyle="bold"
+                            android:inputType="textPersonName"
+                            android:textColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/editTxtValue"
+                            app:layout_constraintHorizontal_bias="0.372"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewSubjects"
+                            app:layout_constraintVertical_bias="1.0" />
 
-                <EditText
-                    android:id="@+id/txtValue3"
-                    android:layout_width="179dp"
-                    android:layout_height="57dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginBottom="0dp"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:hint="Value"
-                    android:textColor="@color/black"
-                    android:inputType="number"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textViewSubjects"
-                    app:layout_constraintVertical_bias="1.0" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="0dp"
-                android:orientation="horizontal"
-                android:paddingLeft="30dp"
-                android:paddingTop="25dp"
-                android:paddingRight="20dp">
+                        <EditText
+                            android:id="@+id/txtValue2"
+                            android:layout_width="179dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="Value"
+                            android:textColor="@color/black"
+                            android:inputType="number"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewSubjects"
+                            app:layout_constraintVertical_bias="1.0" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        >
 
-                <TextView
-                    android:id="@+id/txtNameMatter4"
-                    android:layout_width="165dp"
-                    android:layout_height="57dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginBottom="0dp"
-                    android:text="English"
-                    android:textStyle="bold"
-                    android:inputType="textPersonName"
-                    android:textColor="@color/black"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/editTxtValue"
-                    app:layout_constraintHorizontal_bias="0.372"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textViewSubjects"
-                    app:layout_constraintVertical_bias="1.0" />
+                        <TextView
+                            android:id="@+id/txtNameMatter3"
+                            android:layout_width="172dp"
+                            android:layout_height="57dp"
+                            android:layout_marginRight="0dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="0dp"
+                            android:text="Data Bases"
+                            android:textStyle="bold"
+                            android:inputType="textPersonName"
+                            android:textColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/editTxtValue"
+                            app:layout_constraintHorizontal_bias="0.372"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewSubjects"
+                            app:layout_constraintVertical_bias="1.0" />
 
-                <EditText
-                    android:id="@+id/txtValue4"
-                    android:layout_width="179dp"
-                    android:layout_height="57dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginBottom="0dp"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:hint="Value"
-                    android:textColor="@color/black"
-                    android:inputType="number"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textViewSubjects"
-                    app:layout_constraintVertical_bias="1.0" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="0dp"
-                android:orientation="horizontal"
-                android:paddingLeft="30dp"
-                android:paddingTop="25dp"
-                android:paddingRight="20dp">
+                        <EditText
+                            android:id="@+id/txtValue3"
+                            android:layout_width="179dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="0dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="Value"
+                            android:textColor="@color/black"
+                            android:inputType="number"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewSubjects"
+                            app:layout_constraintVertical_bias="1.0" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        >
 
-                <TextView
-                    android:id="@+id/txtNameMatter5"
-                    android:layout_width="162dp"
-                    android:layout_height="57dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginBottom="0dp"
-                    android:text="software architecture"
-                    android:textStyle="bold"
-                    android:inputType="textPersonName"
-                    android:textColor="@color/black"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/editTxtValue"
-                    app:layout_constraintHorizontal_bias="0.372"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textViewSubjects"
-                    app:layout_constraintVertical_bias="1.0" />
+                        <TextView
+                            android:id="@+id/txtNameMatter4"
+                            android:layout_width="165dp"
+                            android:layout_height="57dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="0dp"
+                            android:text="English"
+                            android:textStyle="bold"
+                            android:inputType="textPersonName"
+                            android:textColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/editTxtValue"
+                            app:layout_constraintHorizontal_bias="0.372"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewSubjects"
+                            app:layout_constraintVertical_bias="1.0" />
 
-                <EditText
-                    android:id="@+id/txtValue5"
-                    android:layout_width="179dp"
-                    android:layout_height="57dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginBottom="0dp"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:hint="Value"
-                    android:textColor="@color/black"
-                    android:inputType="number"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textViewSubjects"
-                    app:layout_constraintVertical_bias="1.0" />
-            </LinearLayout>
+                        <EditText
+                            android:id="@+id/txtValue4"
+                            android:layout_width="179dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="0dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="Value"
+                            android:textColor="@color/black"
+                            android:inputType="number"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewSubjects"
+                            app:layout_constraintVertical_bias="1.0" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        >
+
+                        <TextView
+                            android:id="@+id/txtNameMatter5"
+                            android:layout_width="162dp"
+                            android:layout_height="57dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="0dp"
+                            android:text="software architecture"
+                            android:textStyle="bold"
+                            android:inputType="textPersonName"
+                            android:textColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/editTxtValue"
+                            app:layout_constraintHorizontal_bias="0.372"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewSubjects"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <EditText
+                            android:id="@+id/txtValue5"
+                            android:layout_width="179dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="0dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="Value"
+                            android:textColor="@color/black"
+                            android:inputType="number"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewSubjects"
+                            app:layout_constraintVertical_bias="1.0" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
 
 
 
@@ -405,7 +418,7 @@
 
                 <Button
                     android:id="@+id/btnEnviar"
-                    style="@style/App.btn"
+                    style="@style/btnRegister"
                     android:layout_width="110dp"
                     android:layout_height="43dp"
                     android:layout_marginBottom="0dp"
@@ -430,7 +443,7 @@
 
                 <Button
                     android:id="@+id/btnReturn"
-                    style="@style/App.btn"
+                    style="@style/btnRegister"
                     android:layout_width="110dp"
                     android:layout_height="43dp"
                     android:layout_marginBottom="0dp"

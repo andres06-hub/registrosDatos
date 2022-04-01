@@ -3,6 +3,7 @@ package com.example.registrodatoscolegio
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.TextView
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
@@ -38,10 +39,13 @@ class MainActivity : AppCompatActivity() {
         var btnStatitics = findViewById<Button>(R.id.btnStatitics)
         //Ventana de ayuda
         var btnAHelp = findViewById<Button>(R.id.btnAyuda)
+        // boton salir
+        var btnExit = findViewById<ImageButton>(R.id.btnImgExit)
 
         btnRegistrate.setOnClickListener{ onClick(1) }
         btnStatitics.setOnClickListener{ onClick(2) }
         btnAHelp.setOnClickListener{ onClick(3) }
+        btnExit.setOnClickListener{ onClick(4) }
 
     }
 
@@ -80,8 +84,11 @@ class MainActivity : AppCompatActivity() {
                 //Iniciamos la actividad
                 startActivity(help)
             }
-        }
+            4->{
+                finishAffinity()
 
+            }
+        }
     }
     //TODO -> ORGANIZAR EL PASO DE DATOS
     //Funcion para obtener los datos pasados de la otra actividad

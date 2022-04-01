@@ -9,10 +9,7 @@ import android.text.Spanned
 import android.text.style.ForegroundColorSpan
 import android.view.KeyEvent
 import android.view.LayoutInflater
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.graphics.blue
@@ -73,10 +70,28 @@ class RegistroActivity : AppCompatActivity() {
 
         // iniciamos
         var btnEnviar = findViewById<Button>(R.id.btnEnviar)
-        btnEnviar.setOnClickListener { onclick() }
+        btnEnviar.setOnClickListener { onClick(1) }
+/**
+        //Boton de salir de actividad
+        var btnReturn = findViewById<ImageButton>(R.id.btnImgExit)
+        btnReturn.setOnClickListener{ onClick(2) }
+*/
     }
 
-    private fun onclick() {
+    private fun onClick(boton : Int) {
+
+        when(boton){
+
+            1->{
+                iniciar()
+
+            }
+            2->{
+                finish()
+            }
+        }
+    }
+    private fun onClick(){
         iniciar()
 
     }

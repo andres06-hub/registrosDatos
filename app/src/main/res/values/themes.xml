@@ -22,10 +22,18 @@
         </item>
         <item name="colorPrimary">@color/color_btn</item>
     </style>
-    
+
+    <!--Btn register-->
+    <style name="btnRegister">
+        <item name="android:background">
+            @drawable/btns_register
+        </item>
+        <item name="color">@color/white</item>
+    </style>
+
     <!--Estilo de vistas anunciantes-->
     <style name="App.txtAnunLeft">
-        <item name="android:background">@drawable/button_default</item>
+        <item name="android:background">@drawable/etique_register</item>
         <item name="colorPrimary">@color/color_fondo</item>
     </style>
 

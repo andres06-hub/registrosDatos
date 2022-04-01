@@ -4,17 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:background="#202337">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            >
+
+            <ImageButton
+                android:id="@+id/btnImgExit"
+                android:layout_width="47dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="#3AB24A"
+                android:src="@drawable/ic_exit_to_app" />
+
 
             <TextView
                 android:id="@+id/txtView"
@@ -38,32 +50,34 @@
             <Button
                 android:id="@+id/btnRegistrate"
                 style="@style/App.btn"
-                android:layout_width="316dp"
-                android:layout_height="101dp"
+                android:layout_width="301dp"
+                android:layout_height="71dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="0dp"
                 android:drawableLeft="@drawable/ic_baseline_app_registration_24"
                 android:paddingLeft="90dp"
                 android:paddingRight="80dp"
                 android:text="Enter data"
-                android:layout_gravity="center"
-                android:layout_marginBottom="0dp"
-                android:layout_marginTop="50dp"
                 app:layout_constraintBottom_toTopOf="@+id/btnStatitics"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.494"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.876"
-                />
+                app:layout_constraintVertical_bias="0.876" />
 
             <Button
                 android:id="@+id/btnStatitics"
                 style="@style/App.btn"
-                android:layout_width="316dp"
-                android:layout_height="101dp"
-                android:text="Statitics"
+                android:layout_width="299dp"
+                android:layout_height="63dp"
                 android:layout_gravity="center"
-                android:layout_marginBottom="0dp"
                 android:layout_marginTop="50dp"
+                android:layout_marginBottom="0dp"
+                android:text="Statitics"
+                android:drawableLeft="@drawable/ic_calculate"
+                android:paddingLeft="90dp"
+                android:paddingRight="80dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.494"
@@ -74,21 +88,24 @@
             <Button
                 android:id="@+id/btnAyuda"
                 style="@style/App.btn"
-                android:layout_width="102dp"
-                android:layout_height="62dp"
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="30dp"
                 android:drawableLeft="@drawable/ic_baseline_help_24"
                 android:paddingLeft="10dp"
                 android:paddingRight="8dp"
                 android:text="Help"
-                android:layout_marginBottom="30dp"
-                android:layout_marginTop="50dp"
-                android:layout_gravity="center"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.908" />
+
+
+
         </LinearLayout>
     </ScrollView>
 
