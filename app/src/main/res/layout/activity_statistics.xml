@@ -7,8 +7,8 @@
 
 
     <LinearLayout
-        android:layout_width="388dp"
-        android:layout_height="524dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_marginTop="16dp"
         android:orientation="vertical"
 
@@ -28,9 +28,7 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-
-                    >
+                    android:layout_height="match_parent">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -46,12 +44,9 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginTop="10dp"
-                            android:layout_marginLeft="10dp"
-                            android:paddingTop="0dp"
-                            android:paddingBottom="0sp"
                             android:textStyle="bold"
                             android:textColor="#2E4DA7"
-                            android:textSize="50dp">
+                            android:textSize="60dp">
 
                         </TextView>
 
@@ -59,120 +54,135 @@
                             android:id="@+id/txtView1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
                             android:layout_gravity="center"
                             android:textStyle="bold"
                             android:gravity="center"
                             android:text="Number of Students Processed"
-                            android:textSize="30sp"></TextView>
+                            android:textSize="40sp"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="#747474"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp">
+
+                </LinearLayout>
+
+
+                <!--Winning Students-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtCantEstuGanan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold"
+                            android:textColor="#4CAF50"
+                            android:textSize="50dp"/>
+
+                        <TextView
+                            android:id="@+id/txtView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:text="Winning Students"
+                            android:textSize="30sp"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--Studens recovering-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtCantEstuRecuperan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold"
+                            android:textColor="#FFEB3B"
+                            android:textSize="50dp"/>
+
+                        <TextView
+                            android:id="@+id/txtView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:text="Students recovering: "
+                            android:textSize="30sp"/>
+
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
 
 
-                <LinearLayout
+                <!--Students Missing-->
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="#B0AEAE"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:orientation="horizontal">
+                    android:layout_height="wrap_content">
 
-                    <TextView
-                        android:id="@+id/txtView2"
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:gravity="center"
-                        android:textStyle="bold"
-                        android:text="Winning Students: "
-                        android:textSize="20sp"></TextView>
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/txtCantEstuGanan"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="10dp"
-                        android:paddingTop="0dp"
-                        android:paddingBottom="0sp"
-                        android:textStyle="bold"
-                        android:textSize="20dp">
+                        <TextView
+                            android:id="@+id/txtCantEstuPierden"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:textColor="#AC1D1D"
+                            android:textSize="50dp"/>
 
-                    </TextView>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="#B0AEAE"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/txtView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:text="Students missing: "
+                            android:textSize="30sp"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
 
-                    <TextView
-                        android:id="@+id/txtView3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:gravity="center"
-                        android:textStyle="bold"
-                        android:text="Students missing: "
-                        android:textSize="20sp"></TextView>
-
-                    <TextView
-                        android:id="@+id/txtCantEstuPierden"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="10dp"
-                        android:paddingTop="0dp"
-                        android:paddingBottom="0sp"
-                        android:textStyle="bold"
-                        android:textSize="20dp">
-
-                    </TextView>
-
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="#B0AEAE"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/txtView4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:gravity="center"
-                        android:textStyle="bold"
-                        android:text="Students recovering: "
-                        android:textSize="20sp"></TextView>
-
-                    <TextView
-                        android:id="@+id/txtCantEstuRecuperan"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="10dp"
-                        android:paddingTop="0dp"
-                        android:paddingBottom="0sp"
-                        android:textStyle="bold"
-                        android:textSize="20dp">
-
-                    </TextView>
-
-
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
             </LinearLayout>
         </ScrollView>
